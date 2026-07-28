@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "id": 1785175661447,
+      "name": "Mahidhar",
+      "category": "Professor",
+      "status": "Available"
+    },
+    {
+      "id": 1785175789751,
+      "name": "mahidhar",
+      "category": "profesor",
+      "status": "Available"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1785175666328,
+      "name": "nikhil",
+      "department": "cse"
+    },
+    {
+      "id": 1785175800132,
+      "name": "susheel",
+      "department": "cse"
+    }
+  ],
+  "assignments": []
+}
