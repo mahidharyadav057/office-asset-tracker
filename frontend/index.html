@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Asset Tracker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Office Asset Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Office Asset Tracker</h1>
-    <div id="app">
-        <input id="assetName" placeholder="Asset Name">
-        <button onclick="addAsset()">Add Asset</button>
-        <ul id="assetList"></ul>
-    </div>
-    <script src="script.js"></script>
+
+  <h1>🏢 Office Asset Tracker</h1>
+
+  <!-- Add Asset -->
+  <div class="card">
+    <h2>Add Asset</h2>
+    <input id="assetName" placeholder="Asset Name" />
+    <input id="assetCategory" placeholder="Category" />
+    <button onclick="addAsset()">Add Asset</button>
+  </div>
+
+  <!-- Add Employee -->
+  <div class="card">
+    <h2>Add Employee</h2>
+    <input id="empName" placeholder="Employee Name" />
+    <input id="empDept" placeholder="Department" />
+    <button onclick="addEmployee()">Add Employee</button>
+  </div>
+
+  <!-- Assign Asset -->
+  <div class="card">
+    <h2>Assign Asset</h2>
+    <select id="assetSelect"></select>
+    <select id="empSelect"></select>
+    <button onclick="assignAsset()">Assign</button>
+  </div>
+
+  <!-- Return Asset -->
+  <div class="card">
+    <h2>Return Asset</h2>
+    <select id="returnAssetSelect"></select>
+    <button onclick="returnAsset()">Return</button>
+  </div>
+
+  <!-- Assets List -->
+  <div class="card">
+    <h2>All Assets</h2>
+    <table id="assetTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
